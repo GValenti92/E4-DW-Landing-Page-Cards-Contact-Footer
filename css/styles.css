@@ -2,16 +2,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
 }
 
 body {
   max-width: 80%;
   margin: 10px auto;
-  font-family: Arial, Helvetica, sans-serif;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+/* Header */
 
 header {
   display: flex;
+  align-items: center;
   width: 100%;
 }
 
@@ -25,16 +41,17 @@ ul {
 
 li {
   padding: 0 15px;
+  font-size: 22px;
+  color: whitesmoke;
 }
-
-/* CLASES */
 
 .logo {
   display: flex;
 }
 
 .logo img {
-  width: 150px;
+  width: 200px;
+  margin-top: 20px;
 }
 
 .cont-barranav {
@@ -42,4 +59,52 @@ li {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+/* Portada */
+
+.cont-portada h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+.cont-portada p {
+  font-size: 20px;
+  margin: 30px 20px 50px 0;
+  color: whitesmoke;
+}
+
+.cont-principal {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
+
+.cont-img img {
+  max-width: 450px;
+}
+
+.cont-portada button {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 30px 50px 0 0;
+}
+.cont-portada button > a {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+.contacto {
+  background: #0f2027;
+}
+.continuar-leyendo {
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+
+.parrafo-presentacion {
+  font-size: 20px;
+  margin: 5px;
+  color: whitesmoke;
 }

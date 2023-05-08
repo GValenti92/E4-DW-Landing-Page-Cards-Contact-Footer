@@ -1,37 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>navbar</title>
 
-    <!--- CSS ----->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>navbar</title>
 
-    <link rel="stylesheet" href="./css/styles.css" />
+  <!--- CSS ----->
 
-    <!---- TIPOGRAFIA----->
+  <link rel="stylesheet" href="./css/styles.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="./logo/logo.png" alt="" />
+  <!---- TIPOGRAFIA----->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./logo/logo.png" alt="logo" />
+    </div>
+    <nav class="cont-barranav">
+      <ul>
+        <li>inicio</li>
+        <li>servicios</li>
+        <li>clientes</li>
+        <li>contacto</li>
+    </nav>
+    </ul>
+  </header>
+
+  <main>
+    <!--- Portada --->
+
+    <div class="cont-principal">
+
+
+      <section class="cont-portada">
+
+        <!--- Título --->
+
+        <h1>
+          The Power of Code
+        </h1>
+        <!--- Párrafo --->
+
+        <p>
+          En Gastón Valenti vas a encontrar un servicio para desarrolar sitios web y funcionales para satisfacer las
+          necesidades de los clientes.
+        </p>
+
+        <!--- Botones --->
+
+        <button class="contacto"><a href="#">Contacto</a></button>
+
+        <button class="continuar-leyendo"><a href="#">Continuar Leyendo</a></button>
+
+      </section>
+
+      <!--- Contenedor Imagen --->
+
+      <div class="cont-img">
+
+        <img class="imagen-perfil" src="./Assets/banner-desarrollo-sitios-web_33099-1687.avif" alt="imagen-perfil"
+        title="foto-perfil" />
+
       </div>
-      <nav class="cont-barranav">
-        <ul>
-            <li>inicio</li>
-            <li>servicios</li>
-            <li>clientes</li>
-            <li>contacto</li>
-        </nav>
-        </ul>
-    </header>
-  </body>
+
+      
+    </div>
+
+    
+    <!--- Contenedor Parrafo --->
+
+    <article class="parrafo-presentacion">
+
+      <p>
+       Gastón Valenti: Desarrollo Web para la ciudad de Rosario y el resto del país.
+        Ofrecemos servicios de diseño, programación y mantenimiento de sitios web para empresas, organizaciones y
+        usuarios particulares.
+        Nuestra experiencia y compromiso nos hacen la mejor opción para todas sus necesidades de desarrollo web.
+      </p>
+
+    </article>
+
+  </main>
+</body>
+
 </html>
