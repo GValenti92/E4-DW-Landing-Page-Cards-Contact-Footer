@@ -1,94 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navbar</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>navbar</title>
+    <!--- CSS ----->
 
-  <!--- CSS ----->
+    <link rel="stylesheet" href="./css/styles.css" />
 
-  <link rel="stylesheet" href="./css/styles.css" />
+    <!---- TIPOGRAFIA----->
 
-  <!---- TIPOGRAFIA----->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
-  
-</head>
+  <body>
+    <header>
+      <div class="cont-nav">
+        <div class="logo">
+          <img src="./Assets/logo/logo.png" alt="logo" />
+        </div>
 
-<body>
-  <header>
-    <div class="logo">
-      <img src="./logo/logo.png" alt="logo" />
-    </div>
-    <nav class="cont-barranav">
-      <ul>
-        <li>inicio</li>
-        <li>servicios</li>
-        <li>clientes</li>
-        <li>contacto</li>
-    </nav>
-    </ul>
-  </header>
+        <nav class="cont-barranav">
+          <button class="btn-nav"><a href="#">Inicio</a></button>
+          <button class="btn-nav"><a href="#">Servicios</a></button>
+          <button class="btn-nav"><a href="#">Clientes</a></button>
+          <button class="btn-nav"><a href="#">Contacto</a></button>
+        </nav>
+      </div>
+    </header>
 
-  <main>
-    <!--- Portada --->
+    <main>
+      <!--- Portada --->
 
-    <div class="cont-principal">
+      <div class="cont-principal">
+        <section class="cont-portada">
+          <!--- Título --->
 
+          <h1>The Power of Code</h1>
 
-      <section class="cont-portada">
+          <!--- Párrafo --->
 
-        <!--- Título --->
+          <p>
+            En Gastón Valenti vas a encontrar un servicio para desarrolar sitios
+            web y funcionales para satisfacer las necesidades de los clientes.
+          </p>
 
-        <h1>
-          The Power of Code
-        </h1>
-        <!--- Párrafo --->
+          <!--- Botones --->
 
-        <p>
-          En Gastón Valenti vas a encontrar un servicio para desarrolar sitios web y funcionales para satisfacer las
-          necesidades de los clientes.
-        </p>
+          <button class="contacto"><a href="#">Contacto</a></button>
 
-        <!--- Botones --->
+          <button class="continuar-leyendo">
+            <a href="#">Continuar Leyendo</a>
+          </button>
+        </section>
 
-        <button class="contacto"><a href="#">Contacto</a></button>
+        <!--- Contenedor Imagen --->
 
-        <button class="continuar-leyendo"><a href="#">Continuar Leyendo</a></button>
-
-      </section>
-
-      <!--- Contenedor Imagen --->
-
-      <div class="cont-img">
-
-        <img class="imagen-perfil" src="./Assets/banner-desarrollo-sitios-web_33099-1687.avif" alt="imagen-perfil"
-        title="foto-perfil" />
-
+        <div class="cont-img">
+          <img
+            class="imagen-perfil"
+            src="./Assets/img-perfil/banner-desarrollo-sitios-web_33099-1687.avif"
+            alt="imagen-perfil"
+            title="foto-perfil"
+          />
+        </div>
       </div>
 
-      
-    </div>
+      <!--- Contenedor Parrafo --->
 
-    
-    <!--- Contenedor Parrafo --->
+      <article class="parrafo-presentacion">
+        <p>
+          Gastón Valenti: Desarrollo Web para la ciudad de Rosario y el resto
+          del país. Ofrecemos servicios de diseño, programación y mantenimiento
+          de sitios web para empresas, organizaciones y usuarios particulares.
+          Nuestra experiencia y compromiso nos hacen la mejor opción para todas
+          sus necesidades de desarrollo web.
+        </p>
+      </article>
 
-    <article class="parrafo-presentacion">
+      <!--- Contenedor tarjetas --->
 
-      <p>
-       Gastón Valenti: Desarrollo Web para la ciudad de Rosario y el resto del país.
-        Ofrecemos servicios de diseño, programación y mantenimiento de sitios web para empresas, organizaciones y
-        usuarios particulares.
-        Nuestra experiencia y compromiso nos hacen la mejor opción para todas sus necesidades de desarrollo web.
-      </p>
+      <h2>Nuestros Servicios</h2>
 
-    </article>
+      <div class="cont-cards">
+        <div class="card1">
+          <span>Desarrollo Web</span>
 
-  </main>
-</body>
+          <img
+            src="./Assets/img-cards/img-desarrollo-web.png"
+            alt="desarrollo-web"
+          />
 
+          <p>
+            Proporcionamos servicios de desarrollo web para ayudar a las
+            empresas a construir, lanzar y mantener sus sitios web.
+          </p>
+
+          <button class="mas-info"><a href="#">Más información</a></button>
+        </div>
+
+        <div class="card2">
+          <span>Desarrollo Apps </span>
+
+          <img
+            src="./Assets/img-cards/img-desarrollo-app.png"
+            alt="desarrollo-app"
+          />
+
+          <p>
+            Ofrecemos servicios de desarrollo de aplicaciones móviles para
+            ayudar a las empresas a aprovechar el poder de los dispositivos
+            móviles y la tecnología para conectar a sus clientes con sus
+            productos y servicios.
+          </p>
+
+          <button class="mas-info2"><a href="#">Más información</a></button>
+        </div>
+
+        <div class="card3">
+          <span>Diseño Web </span>
+
+          <img src="./Assets/img-cards/img-diseño-web.png" alt="diseño-web" />
+
+          <p>
+            Proporcionamos servicios de diseño de sitios web para ayudar a las
+            empresas a construir sus sitios web atractivos, intuitivos y fáciles
+            de utilizar para sus clientes.
+          </p>
+
+          <button class="mas-info3"><a href="#">Más información</a></button>
+        </div>
+      </div>
+
+      <!--- Contactanos --->
+
+      <section class="contenedor-contacto">
+        <div class="contact-Us">
+          <h2>Contact Us</h2>
+
+          <h3>Rosario,Santa Fe,Argentina</h3>
+
+          <div class="direccion">
+            <ion-icon name="map-outline"></ion-icon>
+
+            <span
+              >Av. Madres de Plaza 25 de Mayo 3020 - Edificio Nordlink -</span
+            >
+          </div>
+
+          <div class="email">
+            <ion-icon name="mail-unread-outline"></ion-icon>
+
+            <span>gastonvalenti92@gmail.com</span>
+          </div>
+
+          <div class="telefono">
+            <ion-icon name="call-outline"></ion-icon>
+
+            <span>+549341210583</span>
+          </div>
+        </div>
+
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.914227648856!2d-60.66466758143633!3d-32.92686432612681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b655889b61e9cf%3A0x427b1b88b2078fea!2sMadres%20Pl.%2025%20de%20Mayo%203020%2C%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1684248453414!5m2!1ses!2sar"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!--- Pie de página --->
+    <footer>
+      <div class="redes">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-whatsapp"></ion-icon>
+        <ion-icon name="logo-github"></ion-icon>
+      </div>
+      <div class="copyrigth">
+        <small>&copy; <b>2023 Gaston Valenti Web Developer</b> </small>
+      </div>
+    </footer>
+
+    <!-- ion icons-->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
