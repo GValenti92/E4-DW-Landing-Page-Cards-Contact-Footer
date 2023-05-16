@@ -37,7 +37,7 @@ body {
 }
 
 .logo img {
-  width: 200px;
+  width: 450px;
   margin-top: 20px;
 }
 
@@ -265,9 +265,9 @@ h2 {
 }
 
 .contact-Us h3 {
-  color: #7fb3d5;
+  color: whitesmoke;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin: 10px 0 15px 0;
 }
 
 .direccion {
@@ -295,16 +295,11 @@ h2 {
 /* Pie de pagina */
 
 footer {
-  background-color: #0f2027;
   display: flex;
   justify-content: space-evenly;
 }
 
-.redes {
-}
-
 .copyrigth small {
-  color: whitesmoke;
   font-size: 18px;
   font-weight: 400;
 }
