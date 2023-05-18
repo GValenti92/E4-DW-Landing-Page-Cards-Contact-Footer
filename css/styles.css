@@ -28,7 +28,7 @@ body {
 .cont-nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -37,26 +37,35 @@ body {
 }
 
 .logo img {
-  width: 450px;
+  width: 350px;
   margin-top: 20px;
 }
 
-.cont-barranav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.btn-nav {
-  font-size: 20px;
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-  width: 80px;
-  height: 30px;
-  border-radius: 10px;
-  margin: 30px 50px 0 0;
+.menu-toggle {
+  display: none;
 }
 
-.btn-nav > a {
-  color: whitesmoke;
+.toggle {
+  display: none;
+  text-align: center;
+  background: #2c5364;
+  border-radius: 7px;
+  padding: 20px;
+  width: 150px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.toggle li {
+  list-style: none;
+  display: block;
+  padding: 10px 0;
+  color: aqua;
+  font-size: 20px;
+}
+
+.menu-toggle:checked + .toggle {
+  display: block;
 }
 
 /* Portada */
@@ -79,8 +88,12 @@ body {
   padding: 10px;
 }
 
-.cont-img img {
-  max-width: 450px;
+.cont-img {
+  max-width: 25rem;
+  margin-top: 15px;
+}
+.imagen-perfil {
+  max-width: 22rem;
 }
 
 .cont-portada button {
@@ -106,6 +119,11 @@ body {
   font-size: 20px;
   margin: 5px;
   color: whitesmoke;
+}
+
+hr {
+  margin-top: 30px;
+  border-color: aquamarine;
 }
 
 /* Tarjetas */
@@ -135,7 +153,7 @@ h2 {
 .card1 img {
   height: 250px;
   width: 250px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-top: 60px;
 }
 
@@ -177,7 +195,7 @@ h2 {
 .card2 img {
   height: 250px;
   width: 250px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-top: 60px;
 }
 
@@ -219,7 +237,7 @@ h2 {
 .card3 img {
   height: 250px;
   width: 250px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-top: 60px;
 }
 
@@ -302,4 +320,45 @@ footer {
 .copyrigth small {
   font-size: 18px;
   font-weight: 400;
+  color: aquamarine;
+}
+.redes a {
+  color: aquamarine;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+  .cont-portada h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+  }
+  .cont-img {
+    display: none;
+  }
+  .logo img {
+    width: 250px;
+    margin-top: 20px;
+  }
+  .parrafo-presentacion {
+    font-size: 16px;
+    margin: 5px;
+    color: whitesmoke;
+  }
+  .cont-portada p {
+    font-size: 18px;
+    margin: 30px 20px 50px 0;
+    color: whitesmoke;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .mapa iframe {
+    width: 300px;
+    height: auto;
+    margin: 25px 0 25px 0;
+  }
+  .contact-Us {
+    margin: 15px 0 15px 0;
+  }
 }

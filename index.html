@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>navbar</title>
+    <title>GV Web Development</title>
 
     <!--- CSS ----->
 
@@ -26,12 +26,17 @@
         <div class="logo">
           <img src="./Assets/logo/new-logo.png" alt="logo" />
         </div>
-
-        <nav class="cont-barranav">
-          <button class="btn-nav"><a href="#">Inicio</a></button>
-          <button class="btn-nav"><a href="#">Servicios</a></button>
-          <button class="btn-nav"><a href="#">Clientes</a></button>
-          <button class="btn-nav"><a href="#">Contacto</a></button>
+        <nav>
+          <label for="menu-toggle">
+            <img src="./Assets/menu-icon/menu.png" alt="img menu hamburguesa" />
+          </label>
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+          <ul class="toggle">
+            <li>Inicio</li>
+            <li>Servicios</li>
+            <li>Clientes</li>
+            <li>Contacto</li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -83,6 +88,7 @@
           Nuestra experiencia y compromiso nos hacen la mejor opción para todas
           sus necesidades de desarrollo web.
         </p>
+        <hr />
       </article>
 
       <!--- Contenedor tarjetas --->
@@ -138,6 +144,7 @@
           <button class="mas-info3"><a href="#">Más información</a></button>
         </div>
       </div>
+      <hr />
 
       <!--- Contactanos --->
 
@@ -185,11 +192,34 @@
     <!--- Pie de página --->
     <footer>
       <div class="redes">
-        <ion-icon name="logo-facebook" size="large"></ion-icon>
-        <ion-icon name="logo-twitter" size="large"></ion-icon>
-        <ion-icon name="logo-instagram" size="large"></ion-icon>
-        <ion-icon name="logo-whatsapp" size="large"></ion-icon>
-        <ion-icon name="logo-github" size="large"></ion-icon>
+        <a
+          href="https://www.facebook.com/profile.php?id=100083795974490&mibextid=ZbWKwL"
+          target="blanck"
+          ><ion-icon name="logo-facebook" size="large"></ion-icon
+        ></a>
+
+        <a
+          href="https://twitter.com/tonshee92?t=-95A1QRebmjrrJVISuMHWA&s=09"
+          target="blanck"
+          ><ion-icon name="logo-twitter" size="large"></ion-icon
+        ></a>
+
+        <a
+          href="https://instagram.com/gastonvalenti92?igshid=MzNlNGNkZWQ4Mg=="
+          target="blanck"
+          ><ion-icon name="logo-instagram" size="large"></ion-icon
+        ></a>
+
+        <a
+          href="https://wa.me/543412105833?text=Gv%20Web%20development"
+          target="blanck"
+        >
+          <ion-icon name="logo-whatsapp" size="large"></ion-icon
+        ></a>
+
+        <a href="https://github.com/GValenti92" target="blanck"
+          ><ion-icon name="logo-github" size="large"></ion-icon
+        ></a>
       </div>
       <div class="copyrigth">
         <small>&copy; <b>2023 Gaston Valenti Web Developer</b> </small>
