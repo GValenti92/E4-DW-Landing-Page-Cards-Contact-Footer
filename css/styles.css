@@ -47,7 +47,7 @@ header {
   color: aquamarine;
 }
 .navbar-list li {
-  display: none;
+  display: flex;
   margin: 20px 0;
 }
 .navbar-list li a {
