@@ -42,17 +42,16 @@ header {
 }
 
 .navbar-list {
-  gap: 60px;
-  font-size: 20px;
-  color: aquamarine;
+  gap: 30px;
 }
 .navbar-list li {
   display: flex;
   margin: 20px 0;
 }
 .navbar-list li a {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 800;
+  color: aquamarine;
 }
 .menu-label {
   font-size: 25px;

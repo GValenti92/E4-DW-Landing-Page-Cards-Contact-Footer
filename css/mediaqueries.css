@@ -25,120 +25,37 @@
   #menu-toggle:checked + .navbar-list {
     display: block;
   }
-  .navbar-list li {
-    display: none;
-    margin: 20px 0;
-  }
-  .imagen-perfil {
-    display: none;
-  }
-}
-@media (max-width: 823px) {
-  .menu-label {
+  .navbar-list {
     display: flex;
-    order: 2;
-    cursor: pointer;
+    flex-direction: column;
   }
 
-  .menu-label img {
-    height: 20px;
-    width: 25px;
-  }
-
-  #menu-toggle:checked + .navbar-list {
-    display: block;
-  }
   .navbar-list li {
     display: none;
     margin: 20px 0;
   }
   .imagen-perfil {
     display: none;
+  }
+  .mapa iframe {
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .menu-label {
-    display: flex;
-    order: 2;
-    cursor: pointer;
+  .mapa iframe {
+    width: 500px;
+    height: auto;
+    margin-bottom: 30px;
   }
-
-  .menu-label img {
-    height: 20px;
-    width: 25px;
-  }
-
-  #menu-toggle:checked + .navbar-list {
-    display: block;
-  }
-  .navbar-list li {
-    display: none;
-    margin: 20px 0;
-  }
-  .imagen-perfil {
-    display: none;
+  .contacUs {
+    margin-bottom: 50px;
   }
 }
 
 @media (max-width: 576px) {
-  .menu-label {
-    display: flex;
-    order: 2;
-    cursor: pointer;
-  }
-
-  .menu-label img {
-    height: 20px;
-    width: 25px;
-  }
-
-  #menu-toggle:checked + .navbar-list {
-    display: flex;
-  }
-  .imagen-perfil {
-    display: none;
-  }
   .mapa iframe {
-    width: 300px;
+    width: 300;
     height: auto;
-  }
-  .navbar-list li {
-    display: none;
-    margin: 20px 0;
-  }
-
-  footer {
-    display: flex;
-    justify-content: space-evenly;
-  }
-}
-
-@media (max-width: 320px) {
-  .menu-label {
-    display: flex;
-    order: 2;
-    cursor: pointer;
-  }
-
-  .menu-label img {
-    height: 20px;
-    width: 25px;
-  }
-
-  #menu-toggle:checked + .navbar-list {
-    display: flex;
-  }
-  .imagen-perfil {
-    display: none;
-  }
-  .mapa iframe {
-    width: 200px;
-    height: auto;
-  }
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
   }
 }
