@@ -6,7 +6,8 @@
 }
 
 body {
-  width: 100%;
+  width: 90%;
+  height: 90vh;
   margin: 10px auto;
   background: #0f2027; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -43,12 +44,38 @@ header {
 .navbar-list {
   gap: 60px;
   font-size: 20px;
+  color: aquamarine;
+}
+.navbar-list li {
+  display: none;
+  margin: 20px 0;
+}
+.navbar-list li a {
+  font-size: 16px;
+  font-weight: 600;
+}
+.menu-label {
+  font-size: 25px;
   color: whitesmoke;
+  margin-right: 20px;
+  cursor: pointer;
+}
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .navbar-list {
+  height: 40px;
+}
+
+#menu-toggle:checked ~ .navbar-list li {
+  display: block;
 }
 
 .logo {
   width: 150px;
-  height: 120px;
+  height: 130px;
+  margin-left: 20px;
 }
 
 /* Portada */
@@ -224,9 +251,4 @@ footer {
 }
 .redes a {
   color: aquamarine;
-}
-
-#menu-toggle,
-.menu-label {
-  display: none;
 }

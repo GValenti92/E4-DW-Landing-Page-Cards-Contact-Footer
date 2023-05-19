@@ -1,34 +1,108 @@
-@media (max-width: 768px) {
-  .menu-toggle {
+@media (max-width: 2140px) {
+  #menu-toggle,
+  .menu-label {
     display: none;
   }
-
-  .navbar-list {
+}
+@media (max-width: 1200px) {
+  #menu-toggle,
+  .menu-label {
     display: none;
-    text-align: center;
-    background: #2c5364;
-    border-radius: 7px;
-    padding: 20px;
-    width: 150px;
-    margin: 10px auto;
+  }
+}
+@media (max-width: 992px) {
+  #menu-toggle,
+  .menu-label {
+    display: none;
+  }
+}
+@media (max-width: 823px) {
+  .menu-label {
+    display: flex;
+    order: 2;
     cursor: pointer;
   }
 
-  .navbar-list li {
-    list-style: none;
-    display: block;
-    padding: 10px 0;
-    color: aqua;
-    font-size: 20px;
+  .menu-label img {
+    height: 20px;
+    width: 25px;
   }
 
-  .menu-toggle:checked + .navbar-list {
-    display: flex;
+  #menu-toggle:checked + .navbar-list {
+    display: block;
   }
 }
 
-@media (max-width: 992px) {
-  main {
-    gap: 20px;
+@media (max-width: 768px) {
+  .menu-label {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+  }
+
+  .menu-label img {
+    height: 20px;
+    width: 25px;
+  }
+
+  #menu-toggle:checked + .navbar-list {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-label {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+  }
+
+  .menu-label img {
+    height: 20px;
+    width: 25px;
+  }
+
+  #menu-toggle:checked + .navbar-list {
+    display: flex;
+  }
+  .imagen-perfil {
+    display: none;
+  }
+  .mapa iframe {
+    width: 300px;
+    height: auto;
+  }
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 320px) {
+  .menu-label {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+  }
+
+  .menu-label img {
+    height: 20px;
+    width: 25px;
+  }
+
+  #menu-toggle:checked + .navbar-list {
+    display: flex;
+  }
+  .imagen-perfil {
+    display: none;
+  }
+  .mapa iframe {
+    width: 200px;
+    height: auto;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 }
